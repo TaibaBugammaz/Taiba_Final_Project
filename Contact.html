@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&display=swap" rel="stylesheet">
+        
+        <title>طبْجــة</title>
+        
+        <link rel="stylesheet" href="./contact.css">
+        
+
+        <script src="./contact.js"></script>
+
+<!-- side nav. -->
+<style>
+    #mySidenav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 25px;
+      width: 100px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 22px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      box-shadow: 1px 4px 14px 0px #000000;
+    }
+    
+    #mySidenav a:hover {
+      left: 0;
+    }
+    
+    #about {
+      top: 20px;
+      background-color: #3C3744;
+    }
+    
+    #blog {
+      top: 80px;
+      background-color: #3C3744;
+    }
+    
+    #projects {
+      top: 140px;
+      background-color: #3C3744;
+    }
+    
+    
+    </style>
+    
+    <!-- ------------- -->
+
+</head>
+<body>
+
+    <!-- side nav. -->
+<div id="mySidenav" class="sidenav">
+    <a href="./Home.html" id="about"> أول صفحة</a>
+    <a href="./About.html" id="blog">عن طبْجــة</a>
+    <a href="./Contact.html" id="projects">تواصل معانـا</a>
+    <!-- <a href="#" id="contact">Contact</a> -->
+  </div>
+  <!-- ------------------ -->
+
+
+  <section>
+      <h3>إذا ودكم تطلبون اللّعبة مطبوعة..عرفونا بنفسكم وإن شاءالله بنتواصل معاكم قريب</h3>
+    <div class="container">
+      <form action="https://formspree.io/f/xknpkpay" method="POST" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName">إسمك</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">رقم هاتفك</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">الإيميل</label>
+          <input type="email" id="email" name="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage"> ! رسالتك</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">أرسل</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+
+
+
+</body>
+</html>

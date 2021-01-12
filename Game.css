@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+body{
+    background-color: #2191FB;
+    font-family: 'Cairo', sans-serif;
+    background-size: cover;
+   
+}
+
+.control-buttons {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #fbfff1be;
+}
+
+.control-buttons span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FF472D;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight:bolder;
+}
+
+.info-container{
+    width: 1176px;
+    margin: 20px auto 0;
+    background-color: white;
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 0px #000000;
+    border-radius: 20px;
+}
+
+.info-container .name{
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-weight:bold;
+    padding-right: 20px;
+}
+
+.info-container .tries{
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-weight:normal;
+    padding-left: 20px;
+}
+
+.memory-game-blocks { 
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+      
+}
+
+.memory-game-blocks.no-clicking{
+    pointer-events: none;
+}
+
+.memory-game-blocks .game-block {
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+    border-radius: 6px;
+}
+
+.memory-game-blocks .game-block .front {
+    background-color: #FBFFF1;
+    line-height: 200px;
+}
+
+.memory-game-blocks .game-block .front:hover{
+    background-color: #FF472D;
+}
+
+.memory-game-blocks .game-block .front:before {
+    /* content: '!';
+    color: white; */
+    font-size: 100px;
+    font-weight: bold;
+}
+
+
+.memory-game-blocks .game-block .back {
+    /* background-color: white; */
+    transform: rotateY(180deg);
+}
+
+.memory-game-blocks .game-block .back img{
+    width: 200px;
+    height: 200px;
+    /* margin-top: 30px; */
+}
+
+.memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    /* border: 1px solid; */
+    /* box-shadow: 3px 3px 5px 0px #000000; */
+    border-radius: 2px;
+}
+
+
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+
+
+
+
