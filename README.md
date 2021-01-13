@@ -70,8 +70,7 @@
 
 
 
-### زور الموقع..وشوف قوة ذاكرتك 🎈ـ
-[title](https://www.example.com)
+[ زور الموقع..وشوف قوة ذاكرتك 🎈ـ](https://tubjahgame.netlify.app/)
 
-#### gitHub
-[title](https://www.example.com)
+
+[gitHub](https://github.com/TaibaBugammaz/Taiba_Final_Project)
