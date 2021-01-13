@@ -2,7 +2,9 @@
 body{
     background-color: #FFD07B;
     font-family: 'Cairo', sans-serif;
-    background-image: url("./images/gif2.gif");
+    /* background-image: url("./images/gif2.gif"); */
+    /* background-image: url("./images/logo.gif.gif"); */
+    background-image: url("./images/3.gif");
     background-position: center;
     background-size: cover;
 }
